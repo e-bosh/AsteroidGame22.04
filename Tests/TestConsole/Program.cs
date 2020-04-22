@@ -21,15 +21,34 @@ namespace TestConsole
 
 
             //Console.WriteLine(player1.Name);
-            Vector2D v1 = new Vector2D(5,7);
-            Vector2D v2 = new Vector2D(-7,2);
-            Vector2D v3 = v1 + v2;
-            Vector2D v4 = v3 + 3.141592;
+            //Vector2D v1 = new Vector2D(5,7);
+            //Vector2D v2 = new Vector2D(-7,2);
+            //Vector2D v3 = v1 + v2;
+            //Vector2D v4 = v3 + 3.141592;
 
-            double pi = 3.1415;
-            int i = (int)pi;
+            //double pi = 3.1415;
+            //int i = (int)pi;
 
-            double length = v4;  
+            //double length = v4;  
+
+            Printer printer = new Printer();
+            PrefixPrinter prefix_printer = new PrefixPrinter();
+            prefix_printer.Prefix = "!!!!!!!!!!!---------!!!!!!!";
+
+            prefix_printer.Print("QWE");
+
+            printer.Print("Hello World");
+            prefix_printer.PrintData(3.14);
+
+            printer.Print("123");
+
+            printer = prefix_printer;
+
+            Printer printer1 = new PrefixPrinter();
+            printer.Print("321");
+            printer1.Print("456");
+
+
             Console.ReadLine();
         }
     }
