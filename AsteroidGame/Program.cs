@@ -21,7 +21,11 @@ namespace AsteroidGame
             //Screen.PrimaryScreen.WorkingArea
             game_form.Width = 800;
             game_form.Height = 600;
+
             game_form.Show();
+
+            Game.Initialize(game_form);
+            Game.Draw();
 
             Application.Run(game_form);
 
